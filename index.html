@@ -1,293 +1,800 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Saurabh Agrawal | CTO & Software Engineering Leader</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Saurabh Agrawal | CTO at DVT | Software Engineering Leader | Java | Cloud | DevSecOps | AI SDLC Innovator">
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"/>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap" rel="stylesheet">
-
+<!-- saved from url=(0086)https://id-preview-%2Da2a79c85-221a-4baa-86b9-78fa736e53a7.lovable.app/standalone.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurabh Agrawal — CTO &amp; Engineering Leader</title>
+  <meta name="description" content="Saurabh Agrawal — CTO and Software Engineering Leader specializing in Java, Cloud, DevSecOps, and AI-driven SDLC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Saurabh Agrawal — CTO &amp; Engineering Leader_files/css2" rel="stylesheet">
   <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1218;
+      --bg-card: #151921;
+      --fg: #ede9e0;
+      --primary: #c49a3c;
+      --primary-dark: #a37d2e;
+      --secondary: #1e232e;
+      --secondary-fg: #c9c1b3;
+      --muted: #6b7280;
+      --border: #252a36;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
     body {
-      font-family: 'Fira Code', 'Segoe UI', Arial, sans-serif;
-      background: #161b22;
-      color: #f0f6fc;
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
-    main {
-      max-width: 880px;
-      margin: 0 auto;
-      padding: 32px 16px 35px 16px;
+
+    h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ===== NAV ===== */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(15, 18, 24, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: transform 0.3s;
     }
-    .center {
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.9rem 1.5rem;
+    }
+    .nav-logo {
+      font-family: var(--font-display); font-weight: 700; font-size: 1.1rem;
+      color: var(--primary);
+    }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a {
+      font-family: var(--font-display); font-size: 0.8rem; font-weight: 500;
+      color: var(--muted); transition: color 0.2s;
+      letter-spacing: 0.04em;
+    }
+    .nav-links a:hover { color: var(--fg); }
+    .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .hamburger span {
+      display: block; width: 22px; height: 2px; background: var(--fg);
+      margin: 5px 0; transition: 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none; flex-direction: column; position: absolute;
+        top: 100%; left: 0; right: 0; background: rgba(15,18,24,0.97);
+        padding: 1rem 1.5rem; gap: 1rem; border-bottom: 1px solid var(--border);
+      }
+      .nav-links.open { display: flex; }
+      .hamburger { display: block; }
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden; text-align: center; padding: 6rem 1.5rem 4rem;
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.03;
+      background-image:
+        linear-gradient(var(--fg) 1px, transparent 1px),
+        linear-gradient(90deg, var(--fg) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .hero-glow {
+      position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);
+      width: 600px; height: 600px; border-radius: 50%; opacity: 0.06;
+      background: radial-gradient(circle, var(--primary), transparent 70%);
+    }
+    .hero-content { position: relative; z-index: 1; max-width: 800px; }
+    .hero-label {
+      font-family: var(--font-display); color: var(--primary);
+      letter-spacing: 0.3em; text-transform: uppercase; font-size: 0.8rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 700;
+      letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 1.5rem;
+    }
+    .hero h1 .gold { color: var(--primary); }
+    .hero-desc {
+      color: var(--muted); font-size: 1.1rem; max-width: 600px;
+      margin: 0 auto 1rem; line-height: 1.7;
+    }
+    .hero-tags {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .hero-tag {
+      padding: 0.35rem 0.85rem; border-radius: 999px;
+      border: 1px solid var(--border); background: rgba(30,35,46,0.5);
+      font-family: var(--font-display); font-size: 0.75rem;
+      color: var(--secondary-fg); letter-spacing: 0.04em;
+    }
+    .hero-buttons { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.7rem 1.5rem; border-radius: 0.5rem;
+      font-family: var(--font-display); font-size: 0.85rem; font-weight: 500;
+      transition: all 0.2s; cursor: pointer; border: 1px solid var(--border);
+      background: transparent; color: var(--fg);
+    }
+    .btn:hover { background: var(--secondary); }
+    .btn-primary {
+      background: var(--primary); color: var(--bg);
+      border-color: var(--primary);
+    }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn svg { width: 16px; height: 16px; }
+    .hero-quote {
+      margin-top: 3.5rem; color: var(--muted); font-style: italic; font-size: 0.85rem;
+    }
+    .scroll-indicator {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      width: 20px; height: 32px; border: 2px solid rgba(107,114,128,0.3);
+      border-radius: 999px; display: flex; align-items: flex-start; justify-content: center;
+      padding-top: 4px;
+    }
+    .scroll-dot {
+      width: 4px; height: 8px; background: var(--primary); border-radius: 999px;
+      animation: scrollBounce 2s infinite;
+    }
+    @keyframes scrollBounce {
+      0%, 100% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(10px); opacity: 0.3; }
+    }
+
+    /* ===== SECTIONS ===== */
+    section { padding: 6rem 1.5rem; }
+    .section-alt { background: rgba(21, 25, 33, 0.5); }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .container-sm { max-width: 800px; margin: 0 auto; }
+    .section-label {
+      font-family: var(--font-display); color: var(--primary);
+      letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.7rem;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; margin-bottom: 3.5rem;
+    }
+
+    /* ===== WHAT I DO ===== */
+    .cards-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem;
+    }
+    .card {
+      padding: 1.75rem; border-radius: 0.75rem;
+      background: var(--bg-card); border: 1px solid var(--border);
+      transition: border-color 0.3s;
+    }
+    .card:hover { border-color: rgba(196, 154, 60, 0.3); }
+    .card-icon {
+      width: 40px; height: 40px; border-radius: 0.5rem;
+      background: rgba(196, 154, 60, 0.1);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1rem; color: var(--primary); font-size: 1.2rem;
+    }
+    .card h3 {
+      font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;
+    }
+    .card p { color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
+
+    /* ===== EXPERIENCE ===== */
+    .timeline { position: relative; padding-left: 2rem; }
+    .timeline::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+      width: 1px; background: var(--border);
+    }
+    .timeline-item { position: relative; margin-bottom: 3rem; }
+    .timeline-dot {
+      position: absolute; left: -20px; top: 6px;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--primary); transform: translateX(-3.5px);
+    }
+    .timeline-period {
+      font-family: var(--font-display); font-size: 0.7rem;
+      color: var(--muted); letter-spacing: 0.06em; margin-bottom: 0.3rem;
+    }
+    .timeline-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.15rem; }
+    .timeline-company { color: var(--primary); font-size: 0.85rem; margin-bottom: 0.5rem; }
+    .timeline-desc { color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
+
+    @media (min-width: 769px) {
+      .timeline { padding-left: 180px; }
+      .timeline::before { left: 160px; }
+      .timeline-dot { left: calc(-20px + 160px); }
+      .timeline-period {
+        position: absolute; left: -180px; top: 2px; width: 140px; text-align: right;
+      }
+    }
+
+    /* ===== PROJECTS ===== */
+    .project-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;
+    }
+    .project-item {
+      display: flex; align-items: flex-start; gap: 1rem;
+      padding: 1.25rem; border-radius: 0.5rem; border: 1px solid var(--border);
+      transition: border-color 0.3s;
+    }
+    .project-item:hover { border-color: rgba(196,154,60,0.2); }
+    .project-icon { color: var(--primary); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+    .project-item h3 {
+      font-family: var(--font-display); font-size: 0.85rem; font-weight: 500; margin-bottom: 0.25rem;
+    }
+    .project-item p { color: var(--muted); font-size: 0.75rem; line-height: 1.5; }
+
+    /* ===== SKILLS ===== */
+    .skills-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .skill-group h3 {
+      font-family: var(--font-display); font-size: 0.85rem; font-weight: 500;
+      color: var(--primary); margin-bottom: 0.75rem;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .skill-tag {
+      padding: 0.4rem 0.75rem; font-size: 0.75rem; border-radius: 0.35rem;
+      background: var(--secondary); color: var(--secondary-fg);
+    }
+    .certs-section {
+      border-top: 1px solid var(--border); padding-top: 2rem;
+    }
+    .certs-section h3 {
+      font-family: var(--font-display); font-size: 0.85rem; font-weight: 500;
+      color: var(--primary); margin-bottom: 0.75rem;
+    }
+    .cert-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .cert-tag {
+      padding: 0.5rem 1rem; font-size: 0.75rem; border-radius: 0.5rem;
+      border: 1px solid rgba(196,154,60,0.2); font-family: var(--font-display);
+    }
+
+    /* ===== SPEAKING ===== */
+    .talks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; }
+    .talk-card {
+      padding: 1.75rem; border-radius: 0.75rem; border: 1px solid var(--border);
       text-align: center;
     }
-    .typing {
-      font-size: 1.9em;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      border-right: .15em solid #00cbf9;
-      white-space: nowrap;
-      margin: 0 auto 14px auto;
-      overflow: hidden;
-      width: 0;
-      animation: typing 4s steps(48, end) 1s 1 normal both, blink 0.75s step-end infinite;
+    .talk-icon { color: var(--primary); font-size: 1.3rem; margin-bottom: 1rem; }
+    .talk-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.35rem; }
+    .talk-card p { color: var(--muted); font-size: 0.75rem; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      padding: 5rem 1.5rem; border-top: 1px solid var(--border); text-align: center;
     }
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 63ch; }
+    footer h2 { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; }
+    footer > div > p { color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem; max-width: 400px; margin-left: auto; margin-right: auto; }
+    .social-links { display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; }
+    .social-link {
+      width: 48px; height: 48px; border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s; color: var(--fg);
     }
-    @keyframes blink {
-      0%, 100% { border-color: transparent; }
-      50% { border-color: #00cbf9; }
+    .social-link:hover { border-color: var(--primary); color: var(--primary); }
+    .social-link svg { width: 18px; height: 18px; }
+    .copyright { color: var(--muted); font-size: 0.7rem; }
+
+    /* ===== ANIMATIONS ===== */
+    .fade-up {
+      opacity: 0; transform: translateY(25px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
     }
-    h2, h3 {
-      color: #42c8ff;
-      margin-top: 2.5em;
-      margin-bottom: 0.5em;
-      font-weight: 700;
-    }
-    h2 {
-      font-size: 1.38em;
-      border-bottom: 1px solid #24292f;
-      padding-bottom: 4px;
-    }
-    h3 {
-      font-size: 1.1em;
-    }
-    ul, ol {
-      margin: 0 0 1em 1.5em;
-    }
-    a {
-      color: #42c8ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .badge {
-      display: inline-block;
-      background: #24292f;
-      color: #58a6ff;
-      border-radius: .6em;
-      padding: .2em .8em;
-      margin: 2px 6px;
-      font-size: .95em;
-      letter-spacing: 1px;
-    }
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin: 10px 0 28px 0;
-    }
-    .skills-list span {
-      background: #23272e;
-      padding: 6px 14px;
-      border-radius: 16px;
-      font-size: 1em;
-    }
-    .social-links a {
-      margin-right: 18px;
-      font-size: 1.2em;
-    }
-    .section {
-      margin-bottom: 2.7em;
-    }
-    .github-profile-promo {
-      margin-top: 18px;
-    }
-    .github-profile-promo a {
-      text-decoration: none;
-    }
-    .github-profile-promo img {
-      border-radius: 8px;
-      background: #24292f;
-    }
-    .quote {
-      color: #b3c4d8;
-      font-style: italic;
-      border-left: 4px solid #00cbf9;
-      padding-left: 10px;
-      margin: 1.2em 0;
-      font-size: 1.1em;
-    }
-    @media (max-width: 650px) {
-      main { padding: 8px; }
-      .typing { font-size: 1.25em; }
-    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
   </style>
-</head>
+
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('https://cdn.gpteng.co/mcp-widgets/v1/fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg);
+		color: var(--badge-text);
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow);
+		font-size: 12px;
+		font-family: CameraPlainVariable, "CameraPlainVariable Fallback", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+	}
+
+	#lovable-badge-cta {
+		display: flex;
+		align-items: center;
+		gap: var(--badge-gap);
+		padding: 0 var(--badge-padding);
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
+
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
+
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
+
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
+
+	#lovable-badge-text {
+		line-height: 1;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
+</style>
+<meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/2855fbf1-3361-4973-843e-7747d7073246/id-preview-38b73a67--a2a79c85-221a-4baa-86b9-78fa736e53a7.lovable.app-1771786235252.png"></head>
 <body>
-  <main>
-    <div class="center">
-      <div class="typing">Chief Technology Officer | Software Engineering Leader &nbsp; <br/> Java | Cloud | DevSecOps | AI SDLC Innovator</div>
-    </div>
-    <section class="center section">
-      <h1 style="color:#38e8ff;font-size:2.1em;margin-bottom:0.4em;">👋 Welcome!</h1>
-      <p style="font-size:1.2em;">
-        Hi, I’m <b>Saurabh Agrawal</b> — an engineering leader dedicated to building resilient, scalable, and intelligent software ecosystems that enable technology-driven business growth.
-      </p>
-      <div style="font-size:1.09em;">
-        ☁️ CTO (Software Engineering) at <b>DVT, South Africa</b><br/>
-        🌍 Evangelist for open-source, cloud-native development, and modern engineering culture<br/>
-        🎤 Conference Speaker: Microsoft Ignite, DevConf, Microsoft Loves Open Source<br/>
-        🏆 Tech Influencer: Cloud, FinOps, DevSecOps, and Java across AWS & Azure
-      </div>
-      <div class="quote">
-        “Stay Hungry, Stay Foolish.” – Steve Jobs<br/>
-        <span style="font-size: 0.98em;">I remain permanently curious, always learning, always building.</span>
-      </div>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/saurabhagrawal86/" target="_blank">LinkedIn</a>|
-        <a href="https://saurabhagrawal86.github.io/" target="_blank">Portfolio</a>
-      </div>
-    </section>
 
-    <section class="section">
-    <h2>🚀 What I Do</h2>
-    <ul>
-      <li><b>Vision & Strategy:</b> Define technology roadmaps that fuel sustainable innovation and measurable outcomes.</li>
-      <li><b>Engineering Leadership:</b> Shape and mentor high-performance teams, driving best-in-class SDLC and AI-powered practices.</li>
-      <li><b>Open Source & Cloud:</b> Deliver robust Java/Spring/JakartaEE ecosystems, DevSecOps pipelines, and multi-cloud solutions (AWS & Azure).</li>
-      <li><b>Architecture & Performance:</b> Build secure, observable, and cost-optimized systems for critical business operations.</li>
-      <li><b>Mentorship & Culture:</b> Foster purpose-driven environments where engineering craftsmanship shines.</li>
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="https://id-preview--a2a79c85-221a-4baa-86b9-78fa736e53a7.lovable.app/standalone.html#" class="nav-logo">SA</a>
+    <button class="hamburger" onclick="document.querySelector(&#39;.nav-links&#39;).classList.toggle(&#39;open&#39;)" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="https://id-preview--a2a79c85-221a-4baa-86b9-78fa736e53a7.lovable.app/standalone.html#expertise" onclick="closeMenu()">Expertise</a></li>
+      <li><a href="https://id-preview--a2a79c85-221a-4baa-86b9-78fa736e53a7.lovable.app/standalone.html#experience" onclick="closeMenu()">Experience</a></li>
+      <li><a href="https://id-preview--a2a79c85-221a-4baa-86b9-78fa736e53a7.lovable.app/standalone.html#projects" onclick="closeMenu()">Projects</a></li>
+      <li><a href="https://id-preview--a2a79c85-221a-4baa-86b9-78fa736e53a7.lovable.app/standalone.html#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="https://id-preview--a2a79c85-221a-4baa-86b9-78fa736e53a7.lovable.app/standalone.html#speaking" onclick="closeMenu()">Speaking</a></li>
+      <li><a href="https://id-preview--a2a79c85-221a-4baa-86b9-78fa736e53a7.lovable.app/standalone.html#connect" onclick="closeMenu()">Connect</a></li>
     </ul>
-    </section>
+  </div>
+</nav>
 
-    <section class="section">
-      <h2>🏢 Experience Snapshots</h2>
-      <h3>Chief Technology Officer — DVT (2025–present)</h3>
-      <ul>
-        <li>Leading technology vision, architecture, and engineering delivery for enterprise clients.</li>
-        <li>Advocating AI-driven SDLC, DevSecOps, and resilient cloud-native architectures.</li>
-      </ul>
-      <h3>Practice & Engineering Lead — DVT (2016–2025)</h3>
-      <ul>
-        <li>Multiyear technical leadership for global clients: airlines, fintech, healthcare, digital transformation programs.</li>
-        <li>Expert in open-source technologies, FinOps, AWS/Azure, and capability building.</li>
-      </ul>
-      <h3>Technical Solutions Architect — AVIRE Global (2025–present)</h3>
-      <ul>
-        <li>Architect for IoT-enabled, smart building and elevator safety solutions.</li>
-        <li>End-to-end solution design and global team collaboration (UK/EU/US/SA).</li>
-      </ul>
-      <h3>Past Engineering Roles</h3>
-      <ul>
-        <li><b>Discovery Health</b> (Search/Indexing – ELK, Spring Boot, Prometheus, kNN, geo queries)</li>
-        <li><b>Standard Bank — Africa Regions</b> (CoE for digital, 19 countries, Java/Spring, CI/CD, TDD/BDD, SAFe)</li>
-        <li><b>Entelect & Systemsfusion</b> (Full-stack Java, digital health, ISP provisioning, tech mentorship)</li>
-      </ul>
-    </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <h1 class="fade-up visible">Saurabh <span class="gold">Agrawal</span></h1>
+    <p class="hero-desc fade-up visible">
+      Engineering leader building resilient, scalable, and intelligent software ecosystems that enable technology-driven business growth.
+    </p>
+    <div class="hero-tags fade-up visible">
+      <span class="hero-tag">Java</span>
+      <span class="hero-tag">Cloud</span>
+      <span class="hero-tag">DevSecOps</span>
+      <span class="hero-tag">AI/ML</span>
+      <span class="hero-tag">FinOps</span>
+    </div>
+    <div class="hero-buttons fade-up visible">
+      <a href="https://www.linkedin.com/in/saurabhagrawal86" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/saurabhagrawal86" target="_blank" rel="noopener noreferrer" class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+        GitHub
+      </a>
+      <a href="" class="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+        Contact
+      </a>
+    </div>
+    <p class="hero-quote fade-up visible">"Stay Hungry, Stay Foolish." — Steve Jobs</p>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-dot"></div>
+  </div>
+</section>
 
-    <section class="section">
-      <h2>🌟 Project Leadership Highlights</h2>
-      <ul>
-        <li><b>Enterprise Banking:</b> Middleware & digital banking for 19 African countries — Standard Bank Group</li>
-        <li><b>Smart IoT:</b> Realtime elevator monitoring for AVIRE Global (UK)</li>
-        <li><b>Healthcare Search:</b> MaPS 2.0 platform for Discovery Health (Elastic Stack)</li>
-        <li><b>FinOps:</b> Large-scale cloud cost optimization across AWS/Azure</li>
-        <li><b>ISP Platforms:</b> Telco provisioning and billing for major African telcos</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>💡 Talks & Community</h2>
-      <ul>
-        <li>Microsoft Ignite</li>
-        <li>DevConf</li>
-        <li>Microsoft Loves Open Source</li>
-      </ul>
-      <span class="badge">Topics: Cloud-native engineering, Serverless, DevSecOps, Open Source, FinOps</span>
-    </section>
-
-    <section class="section">
-      <h2>🛠️ Skills & Technologies</h2>
-      <div class="skills-list">
-        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="32" style="vertical-align: middle;"/> Java</span>
-        <span>AI/ML</span>
-        <span>TensorFlow</span>
-        <span>Claude</span>
-        <span>Cursor</span>
-        <span>Warp</span>
-        <span>OpenSpec</span>
-        <span>Spec-Driven Developement (SDD)</span>
-        <span>LLMs</span>
-        <span>RAG</span>
-        <span>Vector Databases</span>
-        <span>Spring Boot</span>
-        <span>Python</span>
-        <span>JavaScript</span>
-        <span>AWS</span>
-        <span>Azure</span>
-        <span>Docker</span>
-        <span>Kubernetes</span>
-        <span>DevSecOps</span>
-        <span>CI/CD</span>
-        <span>FinOps</span>
-        <span>Terraform</span>
-        <span>Prometheus</span>
-        <span>Grafana</span>
-        <span>ELK Stack</span>
-        <span>Distributed Systems</span>
-        <span>Microservices</span>
-        <span>Solution Architecture</span>
-        <span>Security Hardening</span>
-        <span>Observability</span>
-        <span>AI Integration</span>
-        <span>TDD</span>
-        <span>BDD</span>
-        <span>Agile/SCRUM</span>
-        <span>SAFe</span>
-        <span>Technical Mentorship</span>
+<!-- WHAT I DO -->
+<section id="expertise">
+  <div class="container">
+    <p class="section-label fade-up visible">Expertise</p>
+    <h2 class="section-title fade-up visible">What I Do</h2>
+    <div class="cards-grid">
+      <div class="card fade-up visible">
+        <div class="card-icon">💡</div>
+        <h3>Vision &amp; Strategy</h3>
+        <p>Define technology roadmaps that fuel sustainable innovation and measurable outcomes.</p>
       </div>
-      <div>
-        <b>Certifications:</b> Java (Oracle) · Red Hat · VMware/Pivotal Spring Engineering
+      <div class="card fade-up visible">
+        <div class="card-icon">👥</div>
+        <h3>Engineering Leadership</h3>
+        <p>Shape and mentor high-performance teams, driving best-in-class SDLC and AI-powered practices.</p>
       </div>
-    </section>
+      <div class="card fade-up visible">
+        <div class="card-icon">☁️</div>
+        <h3>Open Source &amp; Cloud</h3>
+        <p>Deliver robust Java/Spring/JakartaEE ecosystems, DevSecOps pipelines, and multi-cloud solutions.</p>
+      </div>
+      <div class="card fade-up visible">
+        <div class="card-icon">🛡️</div>
+        <h3>Architecture &amp; Performance</h3>
+        <p>Build secure, observable, and cost-optimized systems for critical business operations.</p>
+      </div>
+      <div class="card fade-up visible">
+        <div class="card-icon">❤️</div>
+        <h3>Mentorship &amp; Culture</h3>
+        <p>Foster purpose-driven environments where engineering craftsmanship shines.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="section">
-      <h2>🏅 Client Impact</h2>
-      <ul>
-        <li><b>Airlines, Rail, & Logistics:</b> UAE's best airlines, Avire Global, GB Railfreight</li>
-        <li><b>Banking & Fintech:</b> Standard Bank, FNB, WesBank, Momentum, The Rank Group</li>
-        <li><b>Healthcare:</b> Discovery Health, Discovery Vitality</li>
-        <li><b>Insurance & Investments:</b> Discovery Insure, Discovery Invest, RMB</li>
-        <li>...and more</li>
-      </ul>
-    </section>
+<!-- EXPERIENCE -->
+<section id="experience" class="section-alt">
+  <div class="container">
+    <p class="section-label fade-up visible">Career</p>
+    <h2 class="section-title fade-up visible">Experience</h2>
+    <div class="container-sm">
+      <div class="timeline">
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <p class="timeline-period">2025 — Present</p>
+          <h3 class="timeline-title">Chief Technology Officer</h3>
+          <p class="timeline-company">DVT, South Africa</p>
+          <p class="timeline-desc">Leading technology vision, architecture, and engineering delivery for enterprise clients. Advocating AI-driven SDLC, DevSecOps, and resilient cloud-native architectures.</p>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <p class="timeline-period">2025 — Present</p>
+          <h3 class="timeline-title">Technical Solutions Architect</h3>
+          <p class="timeline-company">AVIRE Global</p>
+          <p class="timeline-desc">Architect for IoT-enabled, smart building and elevator safety solutions. End-to-end solution design and global team collaboration (UK/EU/US/SA).</p>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <p class="timeline-period">2016 — 2025</p>
+          <h3 class="timeline-title">Practice &amp; Engineering Lead</h3>
+          <p class="timeline-company">DVT</p>
+          <p class="timeline-desc">Multiyear technical leadership for global clients across airlines, fintech, healthcare, and digital transformation programs.</p>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <p class="timeline-period">Earlier</p>
+          <h3 class="timeline-title">Senior Engineering Roles</h3>
+          <p class="timeline-company">Discovery Health · Standard Bank · Entelect · Systemsfusion</p>
+          <p class="timeline-desc">Full-stack Java development, search/indexing platforms, digital banking CoE for 19 African countries, tech mentorship.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="section">
-      <h2>📈 GitHub & Community</h2>
-      <div>
-        <a href="https://github.com/saurabhagrawal86" target="_blank">My GitHub</a> |
-        <a href="https://www.linkedin.com/in/saurabhagrawal86" target="_blank">LinkedIn</a>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label fade-up">Impact</p>
+    <h2 class="section-title fade-up">Project Highlights</h2>
+    <div class="project-grid">
+      <div class="project-item fade-up">
+        <span class="project-icon">🏦</span>
+        <div>
+          <h3>Enterprise Banking</h3>
+          <p>Middleware &amp; digital banking for 19 African countries — Standard Bank Group</p>
+        </div>
       </div>
-      <div class="github-profile-promo center" style="margin-top:14px;">
-        <a href="https://github.com/saurabhagrawal86" target="_blank" style="display:inline-block;padding:12px 26px;background:#24292f;color:#42c8ff;font-size:1.12em;border-radius:32px;text-decoration:none;font-weight:600;box-shadow:0 2px 8px rgba(30,40,50,.09)">
-          🐙 View my GitHub Profile
-        </a>
-        <br/><br/>
-        <a href="https://img.shields.io/github/followers/saurabhagrawal86?label=Follow%20on%20GitHub&style=social" target="_blank">
-          <img src="https://img.shields.io/github/followers/saurabhagrawal86?label=Follow%20on%20GitHub&style=social" alt="Follow on GitHub" style="margin-top:7px;"/>
-        </a>
+      <div class="project-item fade-up">
+        <span class="project-icon">🔌</span>
+        <div>
+          <h3>Smart IoT</h3>
+          <p>Realtime elevator monitoring for AVIRE Global (UK)</p>
+        </div>
       </div>
-    </section>
+      <div class="project-item fade-up">
+        <span class="project-icon">🏥</span>
+        <div>
+          <h3>Healthcare Search</h3>
+          <p>MaPS 2.0 platform for Discovery Health (Elastic Stack)</p>
+        </div>
+      </div>
+      <div class="project-item fade-up">
+        <span class="project-icon">💰</span>
+        <div>
+          <h3>FinOps</h3>
+          <p>Large-scale cloud cost optimization across AWS &amp; Azure</p>
+        </div>
+      </div>
+      <div class="project-item fade-up">
+        <span class="project-icon">📡</span>
+        <div>
+          <h3>ISP Platforms</h3>
+          <p>Telco provisioning and billing for major African telcos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="section">
-      <h2>🤝 Let’s Connect!</h2>
-      <div>
-        If you’d like to talk tech, collaborate on open-source,<br/> or invite me to speak at your event —<br>
-        <b>connect with me on <a href="https://www.linkedin.com/in/saurabhagrawal86" target="_blank">LinkedIn</a></b>
+<!-- SKILLS -->
+<section id="skills" class="section-alt">
+  <div class="container">
+    <p class="section-label fade-up">Toolkit</p>
+    <h2 class="section-title fade-up">Skills &amp; Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-group fade-up">
+        <h3>Languages</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Java</span><span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span>
+        </div>
       </div>
-    </section>
-  </main>
-</body>
-</html>
+      <div class="skill-group fade-up">
+        <h3>Frameworks</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Spring Boot</span><span class="skill-tag">JakartaEE</span>
+          <span class="skill-tag">React</span>
+        </div>
+      </div>
+      <div class="skill-group fade-up">
+        <h3>Cloud &amp; DevOps</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS</span><span class="skill-tag">Azure</span>
+          <span class="skill-tag">Docker</span><span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Terraform</span><span class="skill-tag">CI/CD</span>
+        </div>
+      </div>
+      <div class="skill-group fade-up">
+        <h3>AI &amp; Data</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">TensorFlow</span><span class="skill-tag">LLMs</span>
+          <span class="skill-tag">RAG</span><span class="skill-tag">Vector Databases</span>
+          <span class="skill-tag">ELK Stack</span>
+        </div>
+      </div>
+      <div class="skill-group fade-up">
+        <h3>Practices</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">DevSecOps</span><span class="skill-tag">FinOps</span>
+          <span class="skill-tag">TDD/BDD</span><span class="skill-tag">Agile/SCRUM</span>
+          <span class="skill-tag">SAFe</span><span class="skill-tag">Microservices</span>
+        </div>
+      </div>
+      <div class="skill-group fade-up">
+        <h3>Observability</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Prometheus</span><span class="skill-tag">Grafana</span>
+          <span class="skill-tag">Security Hardening</span>
+        </div>
+      </div>
+    </div>
+    <div class="certs-section fade-up">
+      <h3>Certifications</h3>
+      <div class="cert-tags">
+        <span class="cert-tag">Java (Oracle)</span>
+        <span class="cert-tag">Red Hat</span>
+        <span class="cert-tag">VMware/Pivotal Spring Engineering</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEAKING -->
+<section id="speaking">
+  <div class="container">
+    <p class="section-label fade-up">Community</p>
+    <h2 class="section-title fade-up">Talks &amp; Speaking</h2>
+    <div class="talks-grid">
+      <div class="talk-card fade-up">
+        <div class="talk-icon">🎤</div>
+        <h3>Microsoft Ignite</h3>
+        <p>Cloud-native engineering, Serverless</p>
+      </div>
+      <div class="talk-card fade-up">
+        <div class="talk-icon">🎤</div>
+        <h3>DevConf</h3>
+        <p>DevSecOps, Open Source</p>
+      </div>
+      <div class="talk-card fade-up">
+        <div class="talk-icon">🎤</div>
+        <h3>Microsoft Loves Open Source</h3>
+        <p>FinOps, Cloud</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="connect">
+  <div>
+    <h2 class="fade-up">Let's Connect</h2>
+    <p class="fade-up">If you'd like to talk tech, collaborate on open-source, or invite me to speak at your event — reach out.</p>
+    <div class="social-links fade-up">
+      <a href="https://www.linkedin.com/in/saurabhagrawal86" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+      </a>
+      <a href="https://github.com/saurabhagrawal86" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+      </a>
+      <a href="mailto:saurabhagrawal86@gmail.com" class="social-link" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+      </a>
+    </div>
+    <p class="copyright">© 2025 Saurabh Agrawal. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Scroll-triggered fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Close mobile menu
+  function closeMenu() { document.querySelector('.nav-links').classList.remove('open'); }
+
+  // Close menu on outside click
+  document.addEventListener('click', (e) => {
+    const nav = document.querySelector('nav');
+    if (!nav.contains(e.target)) closeMenu();
+  });
+</script>
+
+<script>
+	// Don't show the lovable-badge if the page is in an iframe or if it's being rendered by puppeteer (screenshot service)
+	if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+		// the page is in an iframe
+		var badge = document.getElementById('lovable-badge');
+		if (badge) {
+			badge.style.display = 'none';
+		}
+	}
+
+	// Add click event listener to close button with animation
+	var closeButton = document.getElementById('lovable-badge-close');
+	if (closeButton) {
+		closeButton.addEventListener('click', function(event) {
+			event.preventDefault();
+			event.stopPropagation();
+			var badge = document.getElementById('lovable-badge');
+			if (badge) {
+				badge.classList.add('closing');
+				setTimeout(function() {
+					if (badge) {
+						badge.style.display = 'none';
+					}
+				}, 240);
+			}
+		});
+	}
+</script>
+
+
+</body></html>
